@@ -4,6 +4,7 @@
 'Dilemma' is a 2D visual novel game developed as part of a capstone design course. 
 This game offers a unique gameplay experience where players must make choices in various dilemma situations.
 
+\LogoImage\logo_ver.01.png
 
 ## Development Team
 - **Yujin Kim** - Development
