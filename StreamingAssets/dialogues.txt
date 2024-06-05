@@ -1,0 +1,230 @@
+# 배경 이미지 설정
+BACKGROUND=hallyway
+
+# 캐릭터 이미지 설정
+CHARACTER=me
+
+# 라벨
+LABEL=start
+BACKGROUND=hallyway
+CHARACTER=me
+DIALOGUE=나는 윤 교수님 밑에서 석사 과정을 지내고 있는 대학원생이다. 
+CHARACTER=me
+DIALOGUE=오늘도 연구실 출근… 힘들다…
+CHARACTER=unknown
+DIALOGUE=그 소문 들었어?
+CHARACTER=unknown
+DIALOGUE=우리 학교 대학원생 한 명 또 실종됐대…
+CHARACTER=unknown
+DIALOGUE=근데 그 사람 원래 소문 안 좋았대...
+CHARACTER=me
+DIALOGUE=우리 연구실에서 사람이 계속 사라지는 중이다. 
+CHARACTER=me
+DIALOGUE=이번에 실종된 가연 언니도 좋은 사람이었는데… 
+CHARACTER=me
+DIALOGUE=한 번 알아봐야 할 것 같다.
+DIALOGUE=어디로 이동할까?
+
+
+# 선택지
+CHOICE=교수의 방 |professorOfficeChoice
+CHOICE=연구실 |labChoice
+
+# 라벨
+LABEL=professorOfficeChoice
+CHARACTER=me
+DIALOGUE=...
+CHARACTER=me
+DIALOGUE=교수님이 아직 출근을 안 하신 것 같아.
+CHOICE=연구실 |labChoice
+
+# 라벨
+LABEL=labChoice
+CHARACTER=me
+boxin=black
+DIALOGUE=일단 출근을 해야겠지. 얼른 가자.
+boxout=black
+BACKGROUND=lab
+CHARACTER=me
+DIALOGUE=누군가가 말을 걸어온다.
+CHARACTER=jungun
+DIALOGUE= 어 왔어?
+CHARACTER=yanggun
+DIALOGUE=넌 매일 아슬아슬하게 다니네.
+CHARACTER=me
+DIALOGUE=선배들 안녕하세요!
+CHARACTER=me
+DIALOGUE=(역시 가연 언니는 오늘도 안 오셨네…)
+CHARACTER=me
+DIALOGUE=(슬쩍 선배들한테 물어볼까?)
+
+# 선택지
+CHOICE=정운에게 물어본다.|askJungun
+CHOICE=양건에게 물어본다.|askYanggun
+
+# 라벨
+LABEL=checkScene3
+CHARACTER=me
+DIALOGUE=(찾아낸 증거물을 확인하자.)
+CHOICE=가연의 휴대폰 |gayounPhone
+CHOICE=이상한 문서 |strangeFile1
+
+# 라벨
+LABEL=askJungun
+CHARACTER=jungun
+DIALOGUE=가연이? 그러게… 여행간다더니 아무 소식이 없네. 
+CHARACTER=jungun
+DIALOGUE=휴대폰도 두고 갔던데…
+CHARACTER=jungun
+DIALOGUE=휴대폰이요?
+CHARACTER=jungun
+DIALOGUE=어. 가연이는 갑자기 왜 물어봐?
+CHARACTER=me
+DIALOGUE=어떤 대답을 할까?
+
+# 선택지
+CHOICE=가연 언니가 걱정되어서 한 번 조사해보려구요.|investigateJungun
+
+# 라벨
+LABEL=investigateJungun
+CHARACTER=jungun
+DIALOGUE=조사? 
+CHARACTER=jungun
+DIALOGUE=(정운과의 호감도가 1 올랐다.)
+CHARACTER=jungun
+DIALOGUE=혹시 제가 한번 봐도 될까요?
+CHARACTER=jungun
+DIALOGUE=내가 봤을 땐 아무것도 없더라. 그래도 괜찮으면.
+CHARACTER=jungun
+DIALOGUE=감사합니다.
+CHARACTER=me
+DIALOGUE=(가연의 핸드폰을 얻었다.)
+
+# 선택지
+CHOICE=양건에게 물어본다.|askYanggun
+CHOICE=증거물을 확인한다.|checkScene3
+
+# 라벨
+LABEL=askYanggun
+CHARACTER=yanggun
+DIALOGUE=아 가연이? 고민 많아보이던데… 그러게… 
+CHARACTER=yanggun
+DIALOGUE=다른 소식 들은 건 없어. 교수님도 모르신다고 하셨는데.
+CHARACTER=me
+DIALOGUE=어떤 대답을 할까?
+
+# 선택지
+CHOICE=선배는 가연언니 걱정 안되세요?|concernYanggun
+CHOICE=가연언니 걱정되서 제가 조사할까 하는데.|investigateYanggun
+
+# 라벨
+LABEL=concernYanggun
+DIALOGUE=선배는 가연언니 걱정 안되세요?
+CHARACTER=yanggun
+DIALOGUE=나도 걱정되더라. 가연이 자리 한번 가보는 게 어때?
+CHARACTER=yanggun
+DIALOGUE=(양건의 호감도가 1 올랐다.)
+CHARACTER=yanggun
+DIALOGUE=그럴게요. 감사합니다. 
+CHARACTER=me
+DIALOGUE=(가연의 자리에서 이상한 문서를 찾았다.)
+
+# 선택지
+CHOICE=정운에게 물어본다.|askJungun
+CHOICE=증거물을 확인한다.|checkScene3
+
+# 라벨
+LABEL=investigateYanggun
+CHARACTER=yanggun
+DIALOGUE=가연언니 걱정되서 제가 조사할까 하는데.
+CHARACTER=yanggun
+DIALOGUE=그래? 그러면 가연이 자리 한번 가보는 게 어때?
+CHARACTER=yanggun
+DIALOGUE=그럴게요. 감사합니다.
+boxin=black
+CHARACTER=me
+DIALOGUE=(가연의 자리에서 이상한 문서를 찾았다.)
+
+# 선택지
+CHOICE=정운에게 물어본다.|askJungun
+CHOICE=증거물을 확인한다.|checkScene3
+
+# 라벨
+LABEL=strangeFile1
+CHARACTER=me
+DIALOGUE=휴대폰 먼저 확인하는게 좋을 것 같아.
+CHOICE=가연의 휴대폰 |gayounPhone
+
+# 라벨
+LABEL=gayounPhone
+ITEM=GY_phone
+CHARACTER=me
+DIALOGUE=가연의 핸드폰이다.
+CHARACTER=me
+DIALOGUE=인물 정보를 확인할 수 있는 것 같다.
+
+# 선택지
+CHOICE=연구실 인물 정보 |checkHum
+
+# 라벨
+LABEL=checkHum
+CHARACTER=me
+DIALOGUE=인물 정보를 확인할 수 있다. 
+
+# 선택지
+CHOICE=정운|checkJungun
+CHOICE=양건|checkYanggun
+CHOICE=윤 교수|checkYun
+
+# 라벨
+LABEL=checkJungun
+ITEM=jungun
+CHARACTER=me
+DIALOGUE=김 정운. 27세 남성. 같은 연구실 소속. 
+DIALOGUE=표면상으로는 과묵하고 무관심한 성격으로 보이나, 내면은 냉철하고 계산적이며, 자신의 목표를 위해서라면 어떤 수단도 가리지 않음.
+DIALOGUE=복잡한 퍼즐 풀기, 실험실에서 실험하기.
+
+CHOICE=양건|checkYanggun
+CHOICE=윤 교수|checkYun
+CHOICE=이상한 문서 |strangeFile2
+
+# 라벨
+LABEL=checkYanggun
+ITEM=yanggun
+CHARACTER=me
+DIALOGUE=양 건. 27세 남성. 같은 연구실 소속. 
+DIALOGUE=활발하고 눈치가 빠름. 외향적인 성격이며 머리가 좋다.
+DIALOGUE=주변사람들에게 명확히 자신을 드러내지 않아 어딘가 신비스러운 느낌을 준다.
+
+
+CHOICE=정운|checkJungun
+CHOICE=윤 교수|checkYun
+CHOICE=이상한 문서 |strangeFile2
+
+# 라벨
+LABEL=checkYun
+ITEM=professorYoon
+CHARACTER=me
+DIALOGUE=윤 교수. 48세 남성. 대학교수.
+DIALOGUE=대외적으로는 커리어가 대단한 존경받는 학자로서의 모습을 연기하고 있으나, 내면은 탐욕스럽고 권위적인 인물이다.
+
+CHOICE=정운|checkJungun
+CHOICE=양건|checkYanggun
+CHOICE=이상한 문서 |strangeFile2
+
+# 라벨 
+LABEL=checkHumfin
+
+CHOICE=이상한 문서 |strangeFile2
+
+# 라벨
+LABEL=strangeFile2
+ITEM=will
+CHARACTER=me
+DIALOGUE=가연이 작성한 듯한 문서이다. 
+CHARACTER=me
+DIALOGUE=완성되지 않은 논문과 교수님의 비리를 밝힌다는 비리투고서다. 
+CHARACTER=me
+DIALOGUE=논문의 내용이 어딘가 익숙하다... 
+ITEM=me
+BACKGROUND=lab

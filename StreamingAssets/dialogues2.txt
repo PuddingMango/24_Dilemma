@@ -1,0 +1,196 @@
+# 라벨
+LABEL=start
+BACKGROUND=lab
+CHARACTER=yanggun
+DIALOGUE=교수님 출근하신 것 같더라.
+CHARACTER=me
+DIALOGUE=(가서 가연 언니에 대해서 물어보자!)
+
+CHOICE=교수의 방 |moveProfessorOffice
+
+# 라벨
+LABEL=moveProfessorOffice
+BACKGROUND=professorOffice
+CHARACTER=me
+DIALOGUE=똑똑...
+CHARACTER=me
+DIALOGUE=들어와
+CHARACTER=professorYoon
+DIALOGUE=어 왔니? 아침부터 무슨 일이야?
+CHARACTER=professorYoon
+DIALOGUE=(교수님께 가연 언니에 대해서 물었다.)
+CHARACTER=professorYoon
+DIALOGUE=가연이..?
+CHARACTER=professorYoon
+DIALOGUE=그런 배은망덕한 애 이야기는 왜 꺼내!!
+CHARACTER=professorYoon
+DIALOGUE=너도 한통속이니?
+CHARACTER=professorYoon
+DIALOGUE=네? 무슨 말씀 하시는지... 
+CHARACTER=professorYoon
+DIALOGUE=얼른 나가라 !
+BACKGROUND=lab
+CHARACTER=me
+DIALOGUE=(쫓겨나듯 연구실로 다시 왔다.)
+CHARACTER=me
+DIALOGUE=(선배들과 더 이야기를 나눠야 할 것 같다.)
+
+CHOICE=정운과 이야기한다.|talkJungun
+CHOICE=양건과 이야기한다.|talkYanggun1
+
+# 라벨
+LABEL=talkYanggun1
+CHARACTER=me
+DIALOGUE=...
+CHARACTER=me
+DIALOGUE=정운 선배와 먼저 가연 언니에 대해서 이야기 해야 할 것 같아.
+
+CHOICE=정운과 이야기한다.|talkJungun
+
+# 라벨
+LABEL=talkJungun
+CHARACTER=jungun
+DIALOGUE=선배 혹시 가연 언니가 사라지기 전에 뭐하고 있었는지 아세요?
+CHARACTER=jungun
+DIALOGUE=가연이? 그날 집에 간다 그랬어.
+CHARACTER=jungun
+DIALOGUE=힘든 일이 있어서 본가 다녀온다고.
+CHARACTER=jungun
+DIALOGUE=힘든 일이요 ? 
+CHARACTER=jungun
+DIALOGUE=가연이 소문때문이 아닐까 하고...
+CHARACTER=jungun
+DIALOGUE=근데 왜 물어봐 ? 
+CHARACTER=jungun
+DIALOGUE=교수님께 다녀왔는데 교수님이 가연언니 이야기 나오니까 엄청 화내셔서...
+CHARACTER=jungun
+DIALOGUE=화를 내셨다고?
+CHARACTER=jungun
+DIALOGUE=네. 배은망덕하다고 엄청 화내시던데요?
+CHARACTER=jungun
+DIALOGUE=그래?
+CHARACTER=jungun
+DIALOGUE=고맙다.
+CHARACTER=jungun
+DIALOGUE=(어떤 부분이 고마운거지?)
+CHARACTER=me
+DIALOGUE=(정운과의 호감도가 1 올랐다.)
+CHARACTER=me
+CHOICE=양건과 이야기한다.|talkYanggun2
+
+# 라벨
+LABEL=talkYanggun2
+BACKGROUND=lab2
+CHARACTER=yanggun
+DIALOGUE=교수님이 수상하다고 ? 
+CHARACTER=yanggun
+DIALOGUE=네...
+CHARACTER=yanggun
+DIALOGUE=갔더니 엄청 화내시면서 가연 언니보고 배은망덕 하다 하셨어요.
+CHARACTER=me
+DIALOGUE=(양건과의 호감도가 1 올랐다.)
+CHARACTER=yanggun
+DIALOGUE=그래?
+CHARACTER=yanggun
+DIALOGUE=가연이 자리에는 뭐 없었어?
+CHARACTER=yanggun
+DIALOGUE=(가연의 자리에서 찾은 이상한 문서에 대해서 이야기했다.)
+CHARACTER=yanggun
+DIALOGUE=가연이가 저번 주인가 나한테 교수님이 본인 논문 내용을 다른 사람 보여준 것 같다는 이야기를 했어.
+CHARACTER=yanggun
+DIALOGUE=교수님께 피드백 받을 논문이었는데 어떤 학술지에 기재되었나봐.
+CHARACTER=yanggun
+DIALOGUE=그래서 그것 때문에 고민하던 걸 같이 이야기 했는데...
+CHARACTER=yanggun
+DIALOGUE=(가연 언니가 사라진 게 논문 때문일지도 몰라.)
+CHARACTER=yanggun
+DIALOGUE=정운 선배에게 휴대폰도 받아서 봤어요.
+CHARACTER=yanggun
+DIALOGUE=정운이가 가연이 휴대폰을 가지고 있었어?
+CHARACTER=me
+DIALOGUE=(양건과의 호감도가 1 올랐다.)
+CHARACTER=yanggun
+DIALOGUE=자, 이거 받아.
+CHARACTER=me
+ITEM=Key
+DIALOGUE=(알 수 없는 열쇠를 받았다.)
+CHARACTER=yanggun
+DIALOGUE=나중에 쓸 일이 있을거야.
+ITEM=me
+CHARACTER=me
+DIALOGUE=증거를 찾으려면 어쩔 수 없어.
+CHARACTER=me
+DIALOGUE=교수님이 오시기 전에...
+CHARACTER=me
+DIALOGUE=교수님 방의 한 번 살펴보자.
+DIALOGUE=어디로 이동할까?
+
+CHOICE=교수의 방|professorOffice
+CHOICE=연구실|lab1
+
+# 라벨
+LABEL=lab1
+BACKGROUND=lab
+CHARACTER=me
+DIALOGUE=교수님 오시기 전에 들어가야해. 
+CHARACTER=me
+DIALOGUE=딴 짓하지 말고 서둘러.
+
+CHOICE=교수의 방|professorOffice
+
+# 라벨
+LABEL=professorOffice
+BACKGROUND=professorOffice
+CHARACTER=me
+DIALOGUE=어디부터 살펴볼까?
+
+CHOICE=교수의 책상 서랍|professorDeskDrawer
+CHOICE=교수의 컴퓨터|professorComputer
+
+# 라벨
+LABEL=professorDeskDrawer
+BACKGROUND=professorOffice
+CHARACTER=me
+DIALOGUE=잠겨있어...
+ITEM=Key
+CHARACTER=me
+DIALOGUE=아까 받은 열쇠가 생각났다.
+DIALOGUE=열쇠를 사용할까?
+
+CHOICE=사용하지 않는다.|thinkAgain
+CHOICE=사용한다.|useKey
+
+# 라벨
+LABEL=useKey
+BACKGROUND=professorOffice
+ITEM=will
+CHARACTER=me
+DIALOGUE=가연의 유서로 보이는 물건을 찾았다.
+
+CHOICE=교수의 컴퓨터|professorComputer
+
+# 라벨
+LABEL=thinkAgain
+BACKGROUND=ProfessorOffice
+CHARACTER=me
+DIALOGUE=다시 생각해보자.
+
+CHOICE=사용한다.|useKey
+
+# 라벨
+LABEL=professorComputer
+BACKGROUND=ProfessorOffice
+CHARACTER=me
+ITEM=computer
+DIALOGUE=(메일함이 눈에 들어왔다.)
+CHARACTER=me
+DIALOGUE=(교수님이 누군가와 주고받은 메일 내용이 있다.)
+CHARACTER=me
+DIALOGUE=논문을 하나 대신 작성해주면 돈을 주겠다고...?
+
+CHOICE=교수의 책상 서랍|professorDeskDrawer
+
+# 라벨
+LABEL=nextDay
+CHARACTER=me
+DIALOGUE=다음날 윤 교수님이 사망하셨다는 소식을 들었다.
